@@ -7,13 +7,13 @@ public @interface BindItem {
     @LayoutRes int layout() default 0;
 }
 
-#根据对应的type自动绑定layout
+# 根据对应的type自动绑定layout
  @BindItem(type =0,layout = R.layout.item_one)
     public void one(BaseViewHolder helper,DemoBean bean) throws Exception {
         helper.setText(R.id.textView,bean.text);
  }
  
- #完整的代码
+ # 完整的代码
  
 /**
  * 项目名称: YOSHOP
@@ -33,4 +33,4 @@ public class DemoAdapter extends GBBaseBindAdapter<DemoBean,BaseViewHolder> {
 
 }
 
-#针对多类型的 adapter 可以简化代码 并提高 代码可读性。
+# 针对多类型的 adapter 可以简化代码 并提高 代码可读性。
