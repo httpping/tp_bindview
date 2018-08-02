@@ -1,5 +1,11 @@
 # tp_bindview
 tp_bindview
+
+```java
+compile 'gb.tp.bindview:gb_bindview:1.0.3'
+
+```
+
 利用CymChad 的adapter 为基础 提供 一套注解的多类型匹配规则
 ```java
 public @interface BindItem {
